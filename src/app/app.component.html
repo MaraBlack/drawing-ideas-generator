@@ -1,0 +1,15 @@
+<div class="app-container">
+  <div class="list">
+    <div class="subject">
+      <ideas-list [list]="subjectList"></ideas-list>
+    </div>
+    <div class="environment">
+      <ideas-list [list]="environmentList"></ideas-list>
+    </div>
+  </div>
+
+  <div class="random-container">
+    <button class="random-btn" (click)="getRandomPair()">Random pair</button>
+    <div class="random-pair" *ngIf="pair">{{ pair }}</div>
+  </div>
+</div>
